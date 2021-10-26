@@ -1,0 +1,11 @@
+[package]
+name = "h_encrypt"
+version = "0.1.0"
+edition = "2018"
+authors = ["Baehyunsol <baehyunsl@naver.com>"]
+description = "A simple encrpytion/decryption library."
+license = "MIT"
+keywords = ["encryption", "decryption", "cryptograph"]
+categories = ["Cryptograph"]
+
+[dependencies]
