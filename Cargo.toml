@@ -9,3 +9,5 @@ keywords = ["encryption", "decryption", "cryptograph"]
 categories = ["Cryptography"]
 
 [dependencies]
+rand = "0.8"
+lazy_static = "1.4"
