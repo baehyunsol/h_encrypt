@@ -2,7 +2,7 @@
 
 Rust Encryption/Decryption Library
 
-Every algorithm is designed from scratch, so I cannot guarantee anything. 
+Every algorithm is designed from scratch.
 
 **Don't use this library in serious projects.**
 
