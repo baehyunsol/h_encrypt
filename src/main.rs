@@ -3,6 +3,10 @@ use std::fs::File;
 use std::io::{Read, Write};
 use h_encrypt::{encrypt_bytes, encrypt_stream, decrypt_bytes, decrypt_stream};
 
+const MAJOR_VERSION: usize = 0;
+const MINOR_VERSION: usize = 2;
+const PATCH_VERSION: usize = 3;
+
 fn main() {
     let args = env::args().collect::<Vec<String>>();
 
@@ -13,7 +17,7 @@ fn main() {
         }
 
         else if args[1] == "--version".to_string() || args[1] == "-v".to_string() {
-            println!("0.2.0");
+            println!("{}.{}.{}", MAJOR_VERSION, MINOR_VERSION, PATCH_VERSION);
         }
 
         else if args[1] == "--encrypt".to_string() || args[1] == "-e".to_string() {
@@ -167,7 +171,7 @@ fn main() {
 
 fn print_help() {
     println!(
-"h_encrypt 0.2.0
+"h_encrypt {}.{}.{}
     encryption/decryption utility written from scratch (including the algorithm).
 
     -h / --help
@@ -181,6 +185,9 @@ fn print_help() {
 
     -d / --decrypt <path 1> <path 2> <password>
         read <path 1>, decrypt the read data with <password>, and write the decrypted data to <path 2>
-"
+",
+    MAJOR_VERSION,
+    MINOR_VERSION,
+    PATCH_VERSION
     );
 }

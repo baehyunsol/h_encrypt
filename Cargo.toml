@@ -1,6 +1,6 @@
 [package]
 name = "h_encrypt"
-version = "0.2.2"
+version = "0.2.3"
 edition = "2021"
 authors = ["Baehyunsol <baehyunsl@naver.com>"]
 description = "A simple encrpytion/decryption library."
