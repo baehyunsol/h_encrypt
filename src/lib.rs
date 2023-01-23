@@ -9,7 +9,7 @@ mod tests;
 use hash::{hash_string, hash_stream};
 use table::{Table, apply, inverse_table};
 use utils::{gen_tables, get_suffix_and_prefix_length};
-use err::EncError;
+pub use err::EncError;
 
 pub fn encrypt_bytes(bytes: &[u8], password: &[u8]) -> Vec<u8> {
     let mut bytes_hash = hash_string(bytes);

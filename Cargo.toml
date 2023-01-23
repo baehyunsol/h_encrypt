@@ -1,12 +1,12 @@
 [package]
 name = "h_encrypt"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2021"
 authors = ["Baehyunsol <baehyunsl@naver.com>"]
 description = "A simple encrpytion/decryption library."
 license = "MIT"
 keywords = ["encryption", "decryption", "cryptograph"]
-categories = ["Cryptography"]
+categories = ["cryptography"]
 
 [dependencies]
 rand = "0.8"
