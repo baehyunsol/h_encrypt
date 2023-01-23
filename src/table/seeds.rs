@@ -1,4 +1,4 @@
-use super::*;
+use crate::table::Table;
 
 lazy_static::lazy_static! {
     pub static ref RANDOM_TABLES: Vec<Table> = vec![

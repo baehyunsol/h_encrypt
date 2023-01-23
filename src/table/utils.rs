@@ -1,4 +1,4 @@
-use super::*;
+use crate::table::{apply, compose_table, Table};
 
 pub fn apply_higher_order<T: Clone + Default>(vec: &Vec<T>, table: &Table) -> Vec<T> {
     assert_eq!(vec.len(), 256);
@@ -20,8 +20,8 @@ pub fn compose_tables(v1: &Vec<Table>, v2: &Vec<Table>) -> Vec<Table> {
 
 #[cfg(test)]
 mod tests {
-    use crate::table::*;
-    use super::*;
+    use super::apply_higher_order;
+    use crate::table::seeds::RANDOM_TABLES;
 
     #[test]
     fn higher_order_correct() {
