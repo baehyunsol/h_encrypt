@@ -7,6 +7,7 @@ description = "A simple encrpytion/decryption library."
 license = "MIT"
 keywords = ["encryption", "decryption", "cryptograph"]
 categories = ["cryptography"]
+repository = "https://github.com/baehyunsol/h_encrypt"
 
 [dependencies]
 rand = "0.8"
